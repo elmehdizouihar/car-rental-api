@@ -1,0 +1,11 @@
+framework:
+    validation:
+        enabled: true
+        enable_attributes: true # Utilisez enable_attributes au lieu de enable_annotations
+        # auto_mapping: # Laissez ceci commenté si vous n'utilisez pas l'auto-mapping
+        #     App\Entity\: []
+
+when@test:
+    framework:
+        validation:
+            not_compromised_password: false
